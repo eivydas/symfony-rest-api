@@ -1,3 +1,9 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+issues:
+    path: /issues
+    controller: App\Controller\IssueController::index
+issues_my:
+    path: /issues/my
+    controller: App\Controller\IssueController::my
+issues_my_comments:
+    path: /issues/my/{issueId}/comments
+    controller: App\Controller\IssueController::comments
